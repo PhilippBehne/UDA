@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:/Users/phili/PycharmProjects/UDA/data/src/docling_output/20260312_121205/\" | sed 's/_chunks.*$//' | sort | wc -l)"
+    ]
+  }
+}

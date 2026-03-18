@@ -1,0 +1,57 @@
+# ===========================================
+# RAG System Requirements (UPDATED)
+# ===========================================
+
+# --- PyTorch (CUDA 12.8) ---
+# Installation separat via:
+# pip install torch --index-url https://download.pytorch.org/whl/cu128
+torch
+
+# --- Docling (PDF Processing) ---
+docling
+
+# --- LangChain + Vector Store ---
+langchain
+langchain-community
+chromadb
+
+# --- Embeddings ---
+sentence-transformers
+transformers
+huggingface-hub
+
+# --- Data Processing ---
+pandas
+tqdm
+
+# --- LM Studio API ---
+requests
+
+# ===========================================
+# NEU: Für SOTA Chunking
+# ===========================================
+
+# Chroma's ClusterSemanticChunker (SOTA 91.3% Recall)
+# WICHTIG: Muss von GitHub installiert werden:
+# pip install git+https://github.com/brandonstarxel/chunking_evaluation.git
+
+# Token Counting (für Chunk-Größen)
+tiktoken
+
+# Optional: OpenAI Embeddings (falls du die nutzen willst)
+# openai
+
+qdrant-client
+FlagEmbedding
+tqdm
+# ===========================================
+# INSTALLATION
+# ===========================================
+# 1. Normale Packages:
+#    pip install -r requirements.txt
+#
+# 2. Chroma Chunker (separat, von GitHub):
+#    pip install git+https://github.com/brandonstarxel/chunking_evaluation.git
+#
+# 3. PyTorch CUDA (separat):
+#    pip install torch --index-url https://download.pytorch.org/whl/cu128
